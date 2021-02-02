@@ -31,8 +31,8 @@ Due to necessity, I had to change the PID.hh file's definition from private memb
 I'm not sure exactly where the dependency chain includes PID.hh for the first time, so I've encapsulated all of the gazebo includes. Not pretty, but it works. If you're reading this and know of a better soln', feel free to change it.
 
 */
-#define private public 
 #include <gazebo/common/Plugin.hh>
+#define private public 
 #include <gazebo/common/Time.hh>
 #include <gazebo/physics/physics.hh>
 #include <robotiq_3f_gripper_articulated_gazebo_plugins/RobotiqHandPlugin.h>
