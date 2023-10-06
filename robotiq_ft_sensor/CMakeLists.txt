@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(robotiq_ft_sensor)
 
 find_package(catkin REQUIRED COMPONENTS
+  geometry_msgs
   roscpp
   std_msgs
   message_generation
@@ -34,7 +35,7 @@ generate_messages(
 ## catkin specific configuration ##
 ###################################
 catkin_package(
-  CATKIN_DEPENDS message_runtime std_msgs
+  CATKIN_DEPENDS message_runtime std_msgs geometry_msgs
 )
 
 ###########
